@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Array / Matriz</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com Arrays</h1>
+    <hr />
+    <script>
+      "use strict";
+
+      /* Array (matriz / vetor)
+        Uma array é uma coleção/lista de dados indexados, ou seja, informações sequenciais. 
+        Os dados são os elementos do Array e cada elemento está associado a um índice numérico que começa em zero. 
+        De maneira simplificada, é como uma varável que pode armazenar diversos valores.
+        */
+
+      /* Formas de declaração de Arrays */
+
+      // exemplo 1
+      var massas = ["Lasanha", "Pizza", "Ravioli", "Esfiha"];
+
+      // exemplo 2
+      var frutas = new Array("maçã", "uva", "morango");
+
+      // exemplo 3
+      var herois = [];
+      herois[0] = "Batman";
+      herois[1] = "Capitão América";
+      herois[2] = "Homem Aranha";
+      herois[3] = "Hulk";
+      herois[4] = "Thor";
+      herois[5] = "Homem de Ferro";
+      console.log(
+        "O " +
+          herois[3] +
+          " almoça " +
+          massas[2] +
+          " e prefere " +
+          frutas[0] +
+          " como sombremesa."
+      );
+
+      /* Operações com métodos e propriedades para Arrays */
+
+      // método/função sort() coloca em ordem crescente/alfabética
+      var heroisOrdenados = herois.sort();
+      console.log(heroisOrdenados);
+
+      // propriedade length retorna a quantidade de elementos do array
+      var quantidadeDeMassas = massas.length;
+      console.log(quantidadeDeMassas);
+
+      /* arrays podem receber diversos tipos de valores */
+      var variasCoisas = ["Senac", 2015, true, 215.56];
+
+      /* arrays também podem conter outros arrays como valores */
+      var listaArrays = [massas, frutas, herois];
+      console.log(listaArrays);
+
+      var programas = [
+        ["Word", "Excel"],
+        ["Photoshop", "Animate"],
+        ["VSCode", "Dreamweaver"],
+      ];
+      console.log("O " + programas[1][1] + " é um programa de animação.");
+      console.log("O " + programas[0][1] + " é uma planilha eletrônica.");
+      console.log("O " + programas[2][0] + " é um editor de códigos.");
+    </script>
+  </body>
+</html>

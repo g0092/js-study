@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Objeto Date</title>
+  </head>
+
+  <body>
+    <h1>Trabalhando com o objeto Date</h1>
+    <hr />
+    <script>
+      "use strict";
+
+      // objeto date
+      var data = new Date();
+      var hora = data.getHours();
+      var minuto = data.getMinutes();
+      document.write("Agora, " + hora + ":" + minuto + ", ");
+
+      // apresentando saudação de acordo com horário
+      if (hora < 12) {
+        document.write("Bom dia!");
+      } else if (hora >= 12 && hora <= 18) {
+        document.write("Boa Tarde!");
+      } else {
+        document.write("Boa Noite!");
+      }
+
+      // verificando a idade a partir da data de nascimento
+      var nasc = prompt("Digite o ano em que você nasceu - 4 dígitos");
+      var ano = data.getFullYear();
+      var idade = ano - nasc;
+      if (idade >= 18) {
+        document.write(
+          "<p>Você tem " +
+            idade +
+            " anos de idade e pode visitar nosso site, seja bem-vindo</p>"
+        );
+      } else {
+        document.write(
+          "<p>Nosso site tem conteúdo impróprio para sua idade e não será exibido</p>"
+        );
+      }
+
+      // Data e hora atual
+      // var data = new Date();
+      // document.write(data); // exibe a data complete
+
+      // Armazenando pedaços da data em variáveis:
+      // var dia = data.getDate();			// 1-31
+      // var dsemana = data.getDay();		// 0 (domingo) - 6 (sábado)
+      // var mes = data.getMonth();			// 0-11 (0 é Janeiro)
+      // var ano2 = data.getYear();			// 2 últimos dígitos
+      // var ano4 = data.getFullYear();		// 4 dígitos
+      // var hora = data.getHours();			// 0-23
+      // var min = data.getMinutes();		// 0-59
+      // var seg = data.getSeconds();		// 0-59
+      // var mseg = data.getMilliseconds();	// 0-999
+    </script>
+  </body>
+</html>

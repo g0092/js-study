@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Condicional if/else</title>
+  </head>
+  <body>
+    <h1>Estrutura de controle condicional</h1>
+    <h2>if/else</h2>
+    <hr />
+
+    <script>
+      "use strict";
+
+      /* 
+        Estrutura condicional é composta por comandos que verificam se determinada(s) condição(ões) são VERDADEIRAS ou FALSAS. 
+        Caso seja V, executa um bloco de comandos/ações. 
+        Senão, caso seja F, executa outro bloco de comandos/ações. 
+
+        Sintaxe: 
+
+        if (algumaCondição) {
+            comandos/ações a serem executados se V
+        } else {
+            comandos/ações a serem executados se F
+        } 
+        */
+
+      var nota1, nota2, media;
+      nota1 = 5.8;
+      nota2 = 3.05;
+      media = (nota1 + nota2) / 2;
+      console.log("Sua média é: " + media);
+      console.log("-----------------------");
+
+      console.log("Condicional Composta:");
+      if (media >= 7) {
+        console.log("APROVADO! :-) ");
+      } else {
+        console.log("REPROVADO! :-( ");
+      }
+      console.log("-----------------------");
+
+      console.log("Condicional Encadeada:");
+      var desempenho;
+      if (media < 3) {
+        desempenho = "PÉSSIMO";
+      } else if (media < 5) {
+        desempenho = "RUIM";
+      } else if (media < 7) {
+        desempenho = "REGULAR";
+      } else if (media < 9) {
+        desempenho = "BOM";
+      } else {
+        desempenho = "ÓTIMO";
+      }
+      console.log("Seu desempenho foi: " + desempenho);
+      console.log("-----------------------");
+
+      console.log("Condicional com operadores lógicos");
+      var numero = 15;
+      if (numero >= 20 && numero <= 60) {
+        console.log(numero + " está entre 20 e 60");
+      } else {
+        console.log(numero + " não está entre 20 a 60");
+      }
+      var dia = "Sábado";
+      if (dia == "Sábado" || dia == "Domingo") {
+        console.log("Estamos no final de semana! :) ");
+      } else {
+        console.log("Dia útil... :( ");
+      }
+      console.log("-----------------------");
+    </script>
+  </body>
+</html>

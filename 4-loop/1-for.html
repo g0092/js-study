@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Estrutura de Repetição</title>
+  </head>
+  <body>
+    <h1>Laços (ou Loops) de Repetição no JS</h1>
+    <h2>for</h2>
+    <hr />
+
+    <script>
+      "use script";
+      /* 
+				(sintaxe):
+				for (controles ; condicao ; atualizacao ) {
+					comandos
+				}  
+			*/
+
+      for (var i = 1; i <= 3; i++) {
+        console.log("o valor de i é " + i);
+      }
+      console.log("-----------------------");
+
+      var score;
+      for (score = 0; score <= 10; score++) {
+        console.log("Sua pontuação é: " + score);
+      }
+      console.log("-----------------------");
+
+      var pts;
+      for (pts = 1; pts <= 10; pts++) {
+        if (pts * 2 >= 20) {
+          console.log("Novo record! " + pts + " pontos");
+        } else {
+          console.log("Você conseguiu: " + pts + "pontos");
+        }
+      }
+    </script>
+  </body>
+</html>

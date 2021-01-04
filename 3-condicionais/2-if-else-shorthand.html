@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Condicional shorthand if</title>
+  </head>
+  <body>
+    <h1>Estrutura de controle condicional</h1>
+    <h2>Sintaxe shorthand para if/else</h2>
+    <hr />
+
+    <script>
+      "use strict";
+
+      /* 
+        Short Hand (algo como "forma abreviada") é uma sintaxe rápida e direta 
+        para escrever uma condicional if/else. 
+
+        Ela Utiliza o operador ternário:
+        ? (equivale ao if)
+        : (equivale ao else)
+
+        Sintaxe:
+        algumaCondição ? comandoSeVerdadeiro : comandoSeFalso;
+
+        */
+
+      var media = 6;
+      console.log(media > 7 ? "APROVADO!" : "REPROVADO!");
+
+      var resposta = confirm("Deseja continuar?");
+      resposta
+        ? console.log("Obrigado por confirmar!")
+        : console.log("Cancelado...");
+    </script>
+  </body>
+</html>

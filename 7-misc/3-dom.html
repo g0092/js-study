@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trabalhando com o DOM</title>
+  </head>
+  <body>
+    <header>
+      <h1>Titulo do site</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="destaques">
+        <h2>Titulo do destaque</h2>
+        <p>Texto qualquer....</p>
+      </section>
+
+      <section class="destaques">
+        <h2>Titulo de conteudo</h2>
+        <article id="artigo">
+          <h3>Titulo do artigo</h3>
+          <p>Texto bla bla bla...</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div>Desenvolvido no curso Frontend Expert</div>
+    </footer>
+
+    <script>
+      "use strict";
+
+      /* 
+        Métodos para manipulação de elementos no DOM:
+          getElementById('id')            ->  obter um elemento por ID
+          querySelector('um_seletor')     ->  obter um elemento
+          querySelectorAll('varios_seletores') -> obter varios elem.
+          getElementsByTagName('tag')  ->  obter elementos por nome de tag
+          */
+
+      // Exemplo getElementById
+      var art = document.getElementById("artigo");
+      // Aplicando uma propriedade CSS via JavaScript ao elemento
+      art.style.backgroundColor = "yellow";
+
+      // Exemplo querySelector
+      var item = document.querySelector("li");
+      console.log(item);
+      console.log("--------------------");
+
+      // Exemplos querySelectorAll
+      var itens = document.querySelectorAll("li");
+      console.log(itens);
+      console.log(itens[3]);
+      itens[3].style.border = "solid 1px red";
+      console.log("--------------------");
+
+      // Exemplo getElementsByTagName
+      var p = document.getElementsByTagName("p");
+      p[0].textContent = "Olá"; // mudando o conteúdo da primeira ocorrência de p
+      p[0].style.color = "#F0F"; // mudando a cor do texto da primeira ocorrência de p
+      console.log("Quantos parágrafos temos no documento? " + p.length);
+    </script>
+  </body>
+</html>

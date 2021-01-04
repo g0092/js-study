@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Funções no JS</title>
+  </head>
+  <body>
+    <h1>Criando e utilizando functions</h1>
+    <hr />
+
+    <script>
+      "use strict";
+
+      /* 
+        Funções (function) 
+            Blocos de código capazes de realizar ações, como efetuar cálculos ou manipular dados e retornar valores para o script principal. Normalmente são trechos de código que se repetem e podem ser reaproveitados. 
+            O código contido no corpo de uma função, ou seja, dentro das { chaves }, SOMENTE será executado quando a função for chamada/invocada. 
+        */
+
+      // Sintaxe 1: função estática
+      function minhaFuncao() {
+        /* corpo */
+      }
+
+      // Sintaxe 2: função anônima / função literal
+      var outraFuncao = function () {
+        /* corpo */
+      };
+
+      // Sintaxe 3: função dinâmica
+      var maisUmaFuncao = new Function(/* corpo */);
+
+      /* Exemplos: Definição das funções */
+      function eusou(adjetivo) {
+        console.log("Eu estou me sentindo " + adjetivo);
+      }
+      function saudacao(nome) {
+        console.log("Bem-vindo! " + nome);
+      }
+
+      /* Chamada da função */
+      saudacao("Cássio");
+      eusou("especial");
+
+      // Escopo
+      var numero = 10;
+
+      function dobrar(n) {
+        //variável local
+        var calculo = n * 2;
+        //o comando return é o responsável por finalizar a função e retornar um valor
+        return calculo;
+      }
+
+      document.write("<br>" + dobrar(numero));
+      document.write("<br>" + dobrar(50));
+      document.write("<br>" + dobrar(1000));
+      document.write("<br>" + dobrar(70));
+      document.write("<hr>");
+
+      var triplicar = function (n) {
+        //função anônima literal que calcula e já retorna, sem precisar de variável
+        return n * 3;
+      };
+      // Esta variável receberá o retorno da função triplicar()
+      var resultado = triplicar(5);
+      // a linha abaixo exibe o valor armazenado na variável
+      document.write("<br>" + resultado);
+      document.write("<hr>");
+    </script>
+  </body>
+</html>

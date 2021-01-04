@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Funções para controle de tempo</title>
+  </head>
+  <body>
+    <h1>Trabalhando com temporizadores</h1>
+    <hr />
+    <script>
+      "use strict";
+      /* 
+        setTimeout
+        Função para execução de ações em determinados intervalos de tempo. 
+        Funciona somente uma vez. 
+        */
+
+      function mostraMsg() {
+        console.log(
+          "Obrigado por aguardar até o final da contagem regressiva de 2 segundos!"
+        );
+      }
+      setTimeout(mostraMsg, 2000); // define o tempo que será necessário para o início da execução da função
+      setTimeout(function () {
+        console.log("Olá, depois de 4 segundos");
+      }, 4000);
+
+      /* 
+        setInterval
+        Função para execução indefinida de ações.
+        */
+      function outraMsg() {
+        console.log("Set Interval em ação a cada 6 segundos");
+      }
+      setInterval(outraMsg, 6000);
+    </script>
+  </body>
+</html>

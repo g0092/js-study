@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Funções e métodos nativos no JS</title>
+  </head>
+  <body>
+    <h1>Conhecendo algumas funções e métodos da linguagem JavaScript</h1>
+    <hr />
+    <script>
+      "use strict";
+
+      /* A linguagem JS possui dezenas de funções (ou métodos) nativas, ou seja, recursos já embutidos na própria linguagem. Normalmente são funções utilitárias para conversões, checagens ou ajustes diversos. */
+
+      /* toFixed(numero): Determina a quantidade de casas decimais depois do ponto */
+      var preco = 557.98745668;
+      document.write("Utilizando toFixed: " + preco.toFixed(2));
+
+      /* parseInt (): Converte um valor para núnermo inteiro */
+      var valorReal = 4.8765;
+      document.write("<br>Utilizando parseInt: " + parseInt(valorReal));
+
+      var texto = "Senac Penha";
+      /*  toUpperCase: Converte caracteres de uma String para maiúsculo. */
+      document.write("<br> toUpperCase: " + texto.toUpperCase());
+      /*  toLowerCase: Converte caracteres de uma String para minúsculo. */
+      document.write("<br>toLowerCase: " + texto.toLowerCase());
+
+      /* Objeto Math: Sintaxe: Math.método(valor) */
+
+      /* Métodos do objeto Math */
+      var numero = -254.17;
+
+      // O método ceil, arredonda um número para o próximo número inteiro
+      document.write("<br>Ceil: " + Math.ceil(numero));
+
+      // O método floor, arredonda um número para o número inteiro anterior.
+      document.write("<br>Floor: " + Math.floor(numero));
+
+      // O método round, arredonda um número dependendo do valor, por exemplo, 4.45 se torna 4, 4.55 se torna 5.
+      document.write("<br>Round: " + Math.round(numero));
+
+      // O método abs, recebe um valor representando um número e retorna o valor absoluto desse número. Se for negativo, o valor será convertido para positivo
+      document.write("<br>Abs: " + Math.abs(numero));
+
+      // O método pow, eleva um número a uma determinada potência
+      document.write("<br>Pow: " + Math.pow(2, 3)); // 2 x 2 x 2 = 8
+
+      // O método sqrt extrai a raiz quadrada de um número
+      document.write("<br>Raiz Quadrada (sqrt): " + Math.sqrt(25)); // 5
+
+      // Os métodos min e max, podem receber vários valores, porém, retornam o menor ou maior valor dentro os números passados.
+      document.write("<br>Menor número " + Math.min(numero, 3, 8, 2));
+      document.write("<br>Maior número: " + Math.max(numero, 3, 8, 2));
+
+      // O método random, retorna um valor entre 0 e 1
+      var valorAleatorio = Math.random(); // 0 a 1
+      document.write("<br>Random: " + valorAleatorio);
+
+      var a = Math.random() * 10; // retorna um valor que vai de 0 a 10
+      document.write("<br>Entre 0 e 10: " + a);
+
+      /* Gerar um valor aleatório entre 0 e 10, e em seguida arredondá-lo, retirando a casa decimal */
+      var b = Math.round(Math.random() * 10);
+      document.write("<br>Inteiros entre 0 e 10: " + b);
+    </script>
+  </body>
+</html>

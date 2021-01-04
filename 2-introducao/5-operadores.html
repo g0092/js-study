@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Operadores no JavaScript</title>
+  </head>
+  <body>
+    <h1>Conhecendo os tipos de operadores no JS</h1>
+    <hr />
+
+    <script>
+      "use strict";
+
+      // OPERADORES ARITMÉTICOS
+
+      /*
+      +   Adição/Concatenação 
+      -   Subtração
+      *   Multiplicação
+      /   Divisão
+      %   Módulo (resto da divisão)   
+      ++  Incremento (adiciona 1)
+      --  Decremento (subtrai 1)
+      */
+
+      console.log("Operações aritméticas:");
+      console.log("Soma: " + (50 + 30 + 10));
+      console.log("Subtração: " + (200 - 50));
+      console.log("Multiplicação: " + 10 * 3);
+      console.log("Divisão: " + 21 / 7);
+      console.log("Resto da divisão: " + (25 % 7));
+      var a = 10;
+      console.log("Incremento: " + ++a);
+      console.log("Decremento: " + --a);
+      console.log("Várias operações: " + (100 + 20 - 10) / 2);
+      console.log("-----------------------");
+
+      // OPERADORES RELACIONAIS
+
+      /* 
+      ==  Igualdade
+      !=  Desigualdade ou diferente
+      <   Menor que
+      >   Maior que
+      <=  Menor ou igual
+      >=  Maior ou igual
+      === Igualdade estrita ou identidade
+      !== Desigualdade estrita
+      */
+      console.log("Operações relacionais:");
+      console.log("Igualdade: " + (100 == 100));
+      console.log("Desigualdade: " + (100 != 50));
+      console.log("Menor que: " + (100 < 50));
+      console.log("Maior que: " + (100 > 50));
+      console.log("Menor ou igual: " + (100 <= 50));
+      console.log("Maior ou igual: " + (100 >= 100));
+      console.log("É igual? " + (10 == 10));
+      console.log("É igual? " + ("10" == 10));
+      console.log("É idêntico? " + ("10" === 10));
+      console.log("É diferente? " + (10 != 10));
+      console.log("É diferente? " + ("10" != 10));
+      console.log("É diferente? " + ("10" !== 10));
+      console.log("---------------------");
+
+      // OPERADORES LÓGICOS
+
+      /* 
+      &&  E   (AND):  Exige que todas as condições sejam atendidas para que o resultado seja VERDADEIRO
+      ||  OU  (OR):  Exige que pelo menos uma das condições seja atendida para que o resultado seja VERDADEIRO
+      !   NÃO (NOT): Inverte um resultado lógico. Exemplo: se a condição for VERDADEIRA, o resultado será FALSO.
+      */
+      console.log("Operações Lógicas");
+      console.log(50 > 10 && 100 > 10); // V V true
+      console.log(5 > 10 && 100 > 10); // F V false
+      console.log(5 > 10 && 10 > 10); // F F false
+      console.log(1000 > 100 || 1000 > 50); // V V true
+      console.log(1000 < 100 || 1000 > 50); // F V true
+      console.log(1000 < 100 || 1000 < 50); // F F false
+      console.log(500 > 100); // true
+      console.log(!(500 > 100)); // false
+      console.log("----------------------");
+
+      // OPERADORES DE ATRIBUIÇÃO
+
+      /* 
+      =   Atribuição
+      +=  Adiciona e atribui / Concatena e atribui
+      -=  Subtrai e atribui
+      *=  Multiplica e atribui
+      /=  Divide e atribui
+      %=  Resto da divisão e atribui
+      */
+      console.log("Operações de atribuição");
+      var numero = 100;
+      console.log("Resultado do '+=': " + (numero += 50)); // 150
+      console.log("Resultado do '-=': " + (numero -= 100)); // 50
+      console.log("Resultado do '*=': " + (numero *= 4)); // 200
+      console.log("Resultado do '/=': " + (numero /= 2)); // 100
+    </script>
+  </body>
+</html>

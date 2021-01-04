@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Concatenação de dados</title>
+  </head>
+  <body>
+    <h1>Trabalhando com dados estáticos e dinâmicos</h1>
+    <p>
+      O ato de combinar informações estáticas e dinâmicas é chamado de
+      CONCATENAÇÃO. Podemos utilizar o operador MAIS (+) ou com uma TEMPLATE
+      LITERAL (${}).
+    </p>
+
+    <script>
+      "use strict";
+
+      var banda = "Beatles";
+      var estilo = "Rock";
+
+      // Operador (+)
+      console.log(
+        "Os " + banda + " são um dos grupos de " + estilo + " mais famosos."
+      );
+
+      // Template Literal (${})
+      console.log(`Os ${banda} são um dos grupos de ${estilo} mais famosos.`);
+
+      // Operador concatena e atribui +=
+      var verso;
+      verso = "E volta o cão arrependido ";
+      verso += "com suas orelhas tão fartas, ";
+      verso += "seu osso roído ";
+      verso += "e o rabo entre as patas!";
+      console.log(verso);
+    </script>
+  </body>
+</html>

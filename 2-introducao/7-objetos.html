@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Objetos em JavaScript</title>
+  </head>
+  <body>
+    <h1>Trabalhando com Objetos</h1>
+    <hr />
+
+    <script>
+      "use strict";
+
+      /* 
+      Coleção de dados não ordenada, constituída por pares com um nome e um valor. 
+      Objetos podem conter propriedades e métodos/funções. 
+      */
+
+      // Exemplo 1: criando um objeto e suas propriedades
+      var livro = {
+        titulo: "O Senhor dos Anéis",
+        autor: "J.R.R. Tolkien",
+        genero: "Aventura",
+        volumes: 3,
+        edicoes: 5,
+      };
+      console.log("Título: " + livro.titulo);
+      console.log("Autor: " + livro.autor);
+      console.log("Edições: " + livro.edicoes);
+
+      // Exemplo 2: criando um objeto vazio, e depois adicionando dados
+      var filme = {}; //ou var filme = new Object();
+      filme.titulo = "Os Vingadores 2";
+      filme.duracao = 240;
+      filme.genero = "Ação";
+      filme.ano = 2015;
+      console.log("Filme: " + filme.titulo);
+      console.log("Duração: " + filme.duracao + " minutos.");
+
+      /* Outros Exemplos */
+      var computador = {
+        memoria: 8,
+        hd: 500,
+        placaMae: "Asus",
+        placaDeVideo: "GeForce",
+        processador: "Intel Core i7",
+        perifericos: ["mouse", "teclado", "monitor"],
+      };
+      console.log(
+        "O computador tem " +
+          computador.memoria +
+          "GB de memória e uma placa de vídeo da " +
+          computador.placaDeVideo
+      );
+      console.log("O " + computador.perifericos[2] + " do computador quebrou!");
+    </script>
+  </body>
+</html>

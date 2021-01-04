@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Condicional switch/case</title>
+  </head>
+  <body>
+    <h1>Estrutura de controle condicional</h1>
+    <h2>switch/case</h2>
+    <hr />
+    <script>
+      "use strict";
+
+      /* Condicional switch/case 
+        Esta estrutura avalia uma expressão e realiza testes em possíveis valores para ela. Caso um valor case com a expressão, um bloco de comandos/ações é executado.
+        Dependendo da situação, usar a estrutura switch/case acaba sendo mais rápido e fácil em vez de utilizar if/else. Esta estrutura tende a ser de código mais "limpo" e organizada em comparação com if/else. 
+        Switch/case não poder ser usado com operadores lógicos
+
+        Sintaxe:
+        switch (expressao){
+            case valor1:
+                comandos/ações se a expressão casar com valor1
+                break;
+            case valor2:
+                comandos/ações se a expressão casar com valor2
+                break;
+            default:
+                comandos/ações se nenhum valor casar com a expr.
+                break;
+        } */
+
+      var heroi = prompt("Informe um herói:");
+      switch (heroi) {
+        case "Batman":
+          console.log("Cavaleiro das Trevas!");
+          break;
+        case "Hulk":
+          console.log("Não o deixe bravo!");
+          break;
+        case "Homem de Ferro":
+          console.log("Gênio, bilionário, playboy, filantropo!");
+          break;
+        default:
+          console.log("Não conheço este héroi!");
+          break;
+      }
+
+      var dia = prompt("Informe um dia:");
+      switch (dia) {
+        case "Sábado":
+        case "Domingo":
+          console.log("Oba! Final de Semana!");
+          break;
+        default:
+          console.log("Dia útil...");
+          break;
+      }
+    </script>
+  </body>
+</html>

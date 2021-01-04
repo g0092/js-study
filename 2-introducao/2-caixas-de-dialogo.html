@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Caixas de Diálogo</title>
+  </head>
+  <body>
+    <p>
+      Utilizando métodos/funções "alert", "prompt" e "confirm" do objeto
+      "window"
+    </p>
+    <hr />
+
+    <script>
+      "use strict";
+
+      // Método para aviso/mensagem
+      alert("Estamos praticando JavaScript!");
+
+      // Método com mensagem e possibilidade de confirmação/cancelamento
+      // - retorna um valor que pode ser true (verdadeiro) ou false (falso).
+      confirm("Quer continuar?");
+
+      // Método para solicitar algo para o usuário
+      // - retorna o valor informado, mesmo se vazio ou null (ao clicar em cancelar)
+      prompt("Qual sua cidade?");
+
+      // Exemplos
+      var nome = prompt("Qual seu nome?");
+      var idade = prompt("Qual sua idade?");
+      document.write(`Seu nome é ${nome} e você tem ${idade} anos.`);
+    </script>
+  </body>
+</html>
